@@ -69,17 +69,14 @@ def hoiGame(choice)
     if user_hand == enemy_hand
     return gameResult(false)
     elsif user_hand != enemy_hand
-    return gameResult(true)
+    return false
     end
 end
 
 def gameResult(result)
     border = "-----------------"
-    if result == true
-        puts border
-        puts "【結果】負け"
-        puts "ざんねん！次は頑張ろう"
-    elsif result == false
+
+    if result == false
         puts border
         puts "【結果】勝ち"
         puts "やったね！おめでとう！"
